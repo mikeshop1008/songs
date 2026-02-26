@@ -4,7 +4,7 @@ Use this folder as the dedicated Keil Studio Cloud project.
 
 ## Entry Project
 
-- `SongCloud.uvprojx`
+- `SongCloud.uvprojx` (STM32F401RE target)
 
 ## Source Model
 
@@ -18,4 +18,3 @@ Use this folder as the dedicated Keil Studio Cloud project.
 2. Run `Convert uVision Project to Csolution`.
 3. Build the generated `SongCloud.csolution.yml`.
 4. Flash/debug with ST-LINK.
-

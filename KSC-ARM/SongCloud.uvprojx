@@ -11,18 +11,18 @@
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F401VCTx</Device>
+          <Device>STM32F401RETx</Device>
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F4xx_DFP.2.17.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
-          <Cpu>IROM(0x08000000,0x40000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IROM(0x08000000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec>
           </FlashUtilSpec>
           <StartupFile>
           </StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_256 -FS08000000 -FL040000 -FP0($$Device:STM32F401VCTx$CMSIS\Flash\STM32F4xx_256.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_512 -FS08000000 -FL080000 -FP0($$Device:STM32F401RETx$CMSIS\Flash\STM32F4xx_512.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:STM32F401VCTx$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</RegisterFile>
+          <RegisterFile>$$Device:STM32F401RETx$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</RegisterFile>
           <MemoryEnv>
           </MemoryEnv>
           <Cmp>
@@ -41,7 +41,7 @@
           </SLE66AMisc>
           <SLE66LinkerMisc>
           </SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F401VCTx$CMSIS\SVD\STM32F401x.svd</SFDFile>
+          <SFDFile>$$Device:STM32F401RETx$CMSIS\SVD\STM32F401x.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath>
@@ -275,12 +275,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x10000</Size>
+                <Size>0x18000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x80000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -305,7 +305,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -330,7 +330,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20002000</StartAddress>
-                <Size>0xe000</Size>
+                <Size>0x16000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -368,10 +368,10 @@
             <VariousControls>
               <MiscControls>
               </MiscControls>
-              <Define>USE_HAL_DRIVER,STM32F401xC,HSE_VALUE=8000000</Define>
+              <Define>USE_HAL_DRIVER,STM32F401xE,HSE_VALUE=8000000</Define>
               <Undefine>
               </Undefine>
-              <IncludePath>..\\Core\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy;..\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include;..\\Drivers\\CMSIS\\Include;..\\KSC-ARM\\RTE\\Device\\STM32F401VCTx</IncludePath>
+              <IncludePath>..\\Core\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy;..\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include;..\\Drivers\\CMSIS\\Include;..\\KSC-ARM\\RTE\\Device\\STM32F401RETx</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -392,7 +392,7 @@
               </Define>
               <Undefine>
               </Undefine>
-              <IncludePath>..\\Core\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy;..\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include;..\\Drivers\\CMSIS\\Include;..\\KSC-ARM\\RTE\\Device\\STM32F401VCTx</IncludePath>
+              <IncludePath>..\\Core\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy;..\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include;..\\Drivers\\CMSIS\\Include;..\\KSC-ARM\\RTE\\Device\\STM32F401RETx</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -514,7 +514,7 @@
         <Group>
           <GroupName>Source Files</GroupName>
           <Files>
-            <File><FileName>main.cpp</FileName><FileType>8</FileType><FilePath>.\main.cpp</FilePath></File><File><FileName>stm32f4xx_hal.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath></File><File><FileName>stm32f4xx_hal_cortex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath></File><File><FileName>stm32f4xx_hal_dma.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</FilePath></File><File><FileName>stm32f4xx_hal_dma_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_exti.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c</FilePath></File><File><FileName>stm32f4xx_hal_flash.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</FilePath></File><File><FileName>stm32f4xx_hal_flash_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_flash_ramfunc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</FilePath></File><File><FileName>stm32f4xx_hal_gpio.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath></File><File><FileName>stm32f4xx_hal_pwr.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</FilePath></File><File><FileName>stm32f4xx_hal_pwr_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_rcc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath></File><File><FileName>stm32f4xx_hal_rcc_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_adc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</FilePath></File><File><FileName>stm32f4xx_hal_adc_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_tim.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</FilePath></File><File><FileName>stm32f4xx_hal_tim_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_uart.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</FilePath></File><File><FileName>system_stm32f4xx.c</FileName><FileType>1</FileType><FilePath>..\KSC-ARM\RTE\Device\STM32F401VCTx\system_stm32f4xx.c</FilePath></File></Files>
+            <File><FileName>main.cpp</FileName><FileType>8</FileType><FilePath>.\main.cpp</FilePath></File><File><FileName>stm32f4xx_hal.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath></File><File><FileName>stm32f4xx_hal_cortex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath></File><File><FileName>stm32f4xx_hal_dma.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</FilePath></File><File><FileName>stm32f4xx_hal_dma_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_exti.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c</FilePath></File><File><FileName>stm32f4xx_hal_flash.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</FilePath></File><File><FileName>stm32f4xx_hal_flash_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_flash_ramfunc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</FilePath></File><File><FileName>stm32f4xx_hal_gpio.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath></File><File><FileName>stm32f4xx_hal_pwr.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</FilePath></File><File><FileName>stm32f4xx_hal_pwr_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_rcc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath></File><File><FileName>stm32f4xx_hal_rcc_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_adc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</FilePath></File><File><FileName>stm32f4xx_hal_adc_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_tim.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</FilePath></File><File><FileName>stm32f4xx_hal_tim_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_uart.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</FilePath></File><File><FileName>system_stm32f4xx.c</FileName><FileType>1</FileType><FilePath>..\KSC-ARM\RTE\Device\STM32F401RETx\system_stm32f4xx.c</FilePath></File></Files>
         </Group>
         <Group>
           <GroupName>Documentation</GroupName>
@@ -759,15 +759,15 @@
           </targetInfos>
       </file>
       <file attr="config" category="header" name="CMSIS\Driver\Config\RTE_Device.h" version="2.4.5">
-        <instance index="0">RTE\Device\STM32F401VCTx\RTE_Device.h</instance>
+        <instance index="0">RTE\Device\STM32F401RETx\RTE_Device.h</instance>
         <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.8.1" condition="STM32F4 Framework Classic" />
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
           </targetInfos>
       </file>
-      <file attr="config" category="source" condition="STM32F401xC_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xc.s" version="2.6.8">
-        <instance index="0">RTE\Device\STM32F401VCTx\startup_stm32f401xc.s</instance>
+      <file attr="config" category="source" condition="STM32F401xE_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s" version="2.6.8">
+        <instance index="0">RTE\Device\STM32F401RETx\startup_stm32f401xe.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.3" condition="STM32F4 CMSIS" />
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
@@ -775,7 +775,7 @@
           </targetInfos>
       </file>
       <file attr="config" category="header" name="MDK\Templates\Inc\stm32f4xx_hal_conf.h" version="1.8.1">
-        <instance index="0">RTE\Device\STM32F401VCTx\stm32f4xx_hal_conf.h</instance>
+        <instance index="0">RTE\Device\STM32F401RETx\stm32f4xx_hal_conf.h</instance>
         <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.8.1" condition="STM32F4 Framework Classic" />
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
@@ -783,7 +783,7 @@
           </targetInfos>
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.6.8">
-        <instance index="0">RTE\Device\STM32F401VCTx\system_stm32f4xx.c</instance>
+        <instance index="0">RTE\Device\STM32F401RETx\system_stm32f4xx.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.3" condition="STM32F4 CMSIS" />
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
