@@ -74,8 +74,9 @@ In `Core/Inc/app_config.h`:
 
 ## Keil Integration
 
-1. Create STM32F401 HAL project in Keil.
-2. Add all files under `Core/Src` and include path `Core/Inc`.
+1. Open `MDK-ARM/Blinky.uvprojx` (or convert it in Keil Studio Cloud).
+2. The project now uses a single entry file: `MDK-ARM/main.cpp`.
+   This file aggregates all app modules from `Core/Src/*` into one translation unit.
 3. Ensure HAL modules are enabled:
    - GPIO, RCC, ADC, UART, TIM, PWR
 4. Build and flash.
