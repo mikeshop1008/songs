@@ -21,7 +21,7 @@ These are resolved by Keil Studio Cloud pack management, not from repository fil
 
 ## Keil Studio Cloud Steps
 
-1. Open `KSC-ARM/SongCloud.uvprojx`.
+1. Open `SongCloud.uvprojx`.
 2. Run `Convert uVision Project to Csolution`.
 3. Build the generated `SongCloud.csolution.yml`.
 4. Flash/debug with ST-LINK.
