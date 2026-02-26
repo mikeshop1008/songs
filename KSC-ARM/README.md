@@ -1,6 +1,6 @@
 # Keil Studio Cloud Project (Standalone)
 
-Use this folder as the dedicated Keil Studio Cloud project.
+This folder is fully self-contained for Keil Studio Cloud.
 
 ## Entry Project
 
@@ -8,9 +8,16 @@ Use this folder as the dedicated Keil Studio Cloud project.
 
 ## Source Model
 
-- `main.cpp` is a single-file entry that aggregates all app modules from `../Core/Src/*`.
-- HAL and CMSIS sources are still compiled from `../Drivers/*`.
-- Local RTE/startup files are under `KSC-ARM/RTE`.
+- All application logic is in a single file: `main.cpp`.
+- No source files are referenced from `../Core` or `../Drivers`.
+- Local runtime/config files are under `RTE/`.
+
+## Required Platform Packs
+
+- `Keil.STM32F4xx_DFP`
+- `ARM::CMSIS`
+
+These are resolved by Keil Studio Cloud pack management, not from repository files.
 
 ## Keil Studio Cloud Steps
 

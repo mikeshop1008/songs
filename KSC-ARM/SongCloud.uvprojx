@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
   <SchemaVersion>2.1</SchemaVersion>
   <Header>### uVision Project, (C) Keil Software</Header>
@@ -16,44 +16,28 @@
           <PackID>Keil.STM32F4xx_DFP.2.17.0</PackID>
           <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IROM(0x08000000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
-          <FlashUtilSpec>
-          </FlashUtilSpec>
-          <StartupFile>
-          </StartupFile>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile></StartupFile>
           <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_512 -FS08000000 -FL080000 -FP0($$Device:STM32F401RETx$CMSIS\Flash\STM32F4xx_512.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
           <RegisterFile>$$Device:STM32F401RETx$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</RegisterFile>
-          <MemoryEnv>
-          </MemoryEnv>
-          <Cmp>
-          </Cmp>
-          <Asm>
-          </Asm>
-          <Linker>
-          </Linker>
-          <OHString>
-          </OHString>
-          <InfinionOptionDll>
-          </InfinionOptionDll>
-          <SLE66CMisc>
-          </SLE66CMisc>
-          <SLE66AMisc>
-          </SLE66AMisc>
-          <SLE66LinkerMisc>
-          </SLE66LinkerMisc>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>$$Device:STM32F401RETx$CMSIS\SVD\STM32F401x.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
-          <BinPath>
-          </BinPath>
-          <IncludePath>
-          </IncludePath>
-          <LibPath>
-          </LibPath>
-          <RegisterFilePath>
-          </RegisterFilePath>
-          <DBRegisterFilePath>
-          </DBRegisterFilePath>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath></RegisterFilePath>
+          <DBRegisterFilePath></DBRegisterFilePath>
           <TargetStatus>
             <Error>0</Error>
             <ExitCodeStop>0</ExitCodeStop>
@@ -75,10 +59,8 @@
           <BeforeCompile>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>
-            </UserProg1Name>
-            <UserProg2Name>
-            </UserProg2Name>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopU1X>0</nStopU1X>
@@ -87,10 +69,8 @@
           <BeforeMake>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>
-            </UserProg1Name>
-            <UserProg2Name>
-            </UserProg2Name>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopB1X>0</nStopB1X>
@@ -99,18 +79,15 @@
           <AfterMake>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>
-            </UserProg1Name>
-            <UserProg2Name>
-            </UserProg2Name>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopA1X>0</nStopA1X>
             <nStopA2X>0</nStopA2X>
           </AfterMake>
           <SelectedForBatchBuild>1</SelectedForBatchBuild>
-          <SVCSIdString>
-          </SVCSIdString>
+          <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
           <UseCPPCompiler>1</UseCPPCompiler>
@@ -124,10 +101,8 @@
           <AssembleAssemblyFile>0</AssembleAssemblyFile>
           <PublicsOnly>0</PublicsOnly>
           <StopOnExitCode>3</StopOnExitCode>
-          <CustomArgument>
-          </CustomArgument>
-          <IncludeLibraryModules>
-          </IncludeLibraryModules>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
           <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
@@ -160,16 +135,11 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3>
-          </Flash3>
-          <Flash4>
-          </Flash4>
-          <pFcarmOut>
-          </pFcarmOut>
-          <pFcarmGrp>
-          </pFcarmGrp>
-          <pFcArmRoot>
-          </pFcArmRoot>
+          <Flash3></Flash3>
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
           <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
@@ -202,8 +172,7 @@
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M4"</AdsCpuType>
-            <RvctDeviceName>
-            </RvctDeviceName>
+            <RvctDeviceName></RvctDeviceName>
             <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
@@ -338,8 +307,7 @@
                 <Size>0x2000</Size>
               </OCR_RVCT10>
             </OnChipMemories>
-            <RvctStartVector>
-            </RvctStartVector>
+            <RvctStartVector></RvctStartVector>
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
@@ -366,12 +334,10 @@
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls>
-              </MiscControls>
+              <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F401xE,HSE_VALUE=8000000</Define>
-              <Undefine>
-              </Undefine>
-              <IncludePath>..\\Core\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy;..\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include;..\\Drivers\\CMSIS\\Include;..\\KSC-ARM\\RTE\\Device\\STM32F401RETx</IncludePath>
+              <Undefine></Undefine>
+              <IncludePath>.\RTE\Device\STM32F401RETx</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -386,13 +352,10 @@
             <useXO>0</useXO>
             <ClangAsOpt>1</ClangAsOpt>
             <VariousControls>
-              <MiscControls>
-              </MiscControls>
-              <Define>
-              </Define>
-              <Undefine>
-              </Undefine>
-              <IncludePath>..\\Core\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc;..\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy;..\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include;..\\Drivers\\CMSIS\\Include;..\\KSC-ARM\\RTE\\Device\\STM32F401RETx</IncludePath>
+              <MiscControls></MiscControls>
+              <Define></Define>
+              <Undefine></Undefine>
+              <IncludePath>.\RTE\Device\STM32F401RETx</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -404,20 +367,13 @@
             <useFile>0</useFile>
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
-            <pXoBase>
-            </pXoBase>
-            <ScatterFile>
-            </ScatterFile>
-            <IncludeLibs>
-            </IncludeLibs>
-            <IncludeLibsPath>
-            </IncludeLibsPath>
-            <Misc>
-            </Misc>
-            <LinkerInputFile>
-            </LinkerInputFile>
-            <DisabledWarnings>
-            </DisabledWarnings>
+            <pXoBase></pXoBase>
+            <ScatterFile></ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc></Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings></DisabledWarnings>
           </LDads>
         </TargetArmAds>
       </TargetOption>
@@ -437,10 +393,8 @@
               <AssembleAssemblyFile>2</AssembleAssemblyFile>
               <PublicsOnly>2</PublicsOnly>
               <StopOnExitCode>11</StopOnExitCode>
-              <CustomArgument>
-              </CustomArgument>
-              <IncludeLibraryModules>
-              </IncludeLibraryModules>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
               <ComprImg>1</ComprImg>
             </CommonProperty>
             <GroupArmAds>
@@ -469,14 +423,10 @@
                 <v6WtE>0</v6WtE>
                 <v6Rtti>2</v6Rtti>
                 <VariousControls>
-                  <MiscControls>
-                  </MiscControls>
-                  <Define>
-                  </Define>
-                  <Undefine>
-                  </Undefine>
-                  <IncludePath>
-                  </IncludePath>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
                 </VariousControls>
               </Cads>
               <Aads>
@@ -491,14 +441,10 @@
                 <useXO>2</useXO>
                 <ClangAsOpt>0</ClangAsOpt>
                 <VariousControls>
-                  <MiscControls>
-                  </MiscControls>
-                  <Define>
-                  </Define>
-                  <Undefine>
-                  </Undefine>
-                  <IncludePath>
-                  </IncludePath>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
                 </VariousControls>
               </Aads>
             </GroupArmAds>
@@ -514,7 +460,17 @@
         <Group>
           <GroupName>Source Files</GroupName>
           <Files>
-            <File><FileName>main.cpp</FileName><FileType>8</FileType><FilePath>.\main.cpp</FilePath></File><File><FileName>stm32f4xx_hal.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath></File><File><FileName>stm32f4xx_hal_cortex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath></File><File><FileName>stm32f4xx_hal_dma.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</FilePath></File><File><FileName>stm32f4xx_hal_dma_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_exti.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c</FilePath></File><File><FileName>stm32f4xx_hal_flash.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</FilePath></File><File><FileName>stm32f4xx_hal_flash_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_flash_ramfunc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</FilePath></File><File><FileName>stm32f4xx_hal_gpio.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath></File><File><FileName>stm32f4xx_hal_pwr.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</FilePath></File><File><FileName>stm32f4xx_hal_pwr_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_rcc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath></File><File><FileName>stm32f4xx_hal_rcc_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_adc.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c</FilePath></File><File><FileName>stm32f4xx_hal_adc_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_tim.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c</FilePath></File><File><FileName>stm32f4xx_hal_tim_ex.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c</FilePath></File><File><FileName>stm32f4xx_hal_uart.c</FileName><FileType>1</FileType><FilePath>..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</FilePath></File><File><FileName>system_stm32f4xx.c</FileName><FileType>1</FileType><FilePath>..\KSC-ARM\RTE\Device\STM32F401RETx\system_stm32f4xx.c</FilePath></File></Files>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\main.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RTE\Device\STM32F401RETx\system_stm32f4xx.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Documentation</GroupName>
@@ -541,10 +497,8 @@
               <AssembleAssemblyFile>2</AssembleAssemblyFile>
               <PublicsOnly>2</PublicsOnly>
               <StopOnExitCode>11</StopOnExitCode>
-              <CustomArgument>
-              </CustomArgument>
-              <IncludeLibraryModules>
-              </IncludeLibraryModules>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
               <ComprImg>1</ComprImg>
             </CommonProperty>
             <GroupArmAds>
@@ -573,14 +527,10 @@
                 <v6WtE>0</v6WtE>
                 <v6Rtti>2</v6Rtti>
                 <VariousControls>
-                  <MiscControls>
-                  </MiscControls>
-                  <Define>
-                  </Define>
-                  <Undefine>
-                  </Undefine>
-                  <IncludePath>
-                  </IncludePath>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
                 </VariousControls>
               </Cads>
               <Aads>
@@ -595,14 +545,10 @@
                 <useXO>2</useXO>
                 <ClangAsOpt>0</ClangAsOpt>
                 <VariousControls>
-                  <MiscControls>
-                  </MiscControls>
-                  <Define>
-                  </Define>
-                  <Undefine>
-                  </Undefine>
-                  <IncludePath>
-                  </IncludePath>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
                 </VariousControls>
               </Aads>
             </GroupArmAds>
@@ -619,32 +565,32 @@
         </Group>
       </Groups>
     </Target>
-    </Targets>
+  </Targets>
   <RTE>
     <apis>
       <api Capiversion="1.00" Cclass="Board Support" Cgroup="Buttons" exclusive="0">
         <package name="MDK-Middleware" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="6.1.3" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </api>
       <api Capiversion="1.00" Cclass="Board Support" Cgroup="LED" exclusive="0">
         <package name="MDK-Middleware" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="6.1.3" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </api>
       <api Capiversion="2.1.2" Cclass="CMSIS" Cgroup="RTOS2" exclusive="1" isTargetSpecific="1">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.2.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </api>
       <api Cclass="Device" Cgroup="STM32Cube Framework" exclusive="1">
         <package name="STM32F4xx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack" vendor="Keil" version="2.2.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </api>
     </apis>
     <components>
@@ -652,16 +598,16 @@
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Capiversion="2.1.3" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.5.3" condition="RTOS2 RTX5" isTargetSpecific="1">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0" />
-        </component>
+      </component>
       <component Capiversion="2.1.3" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Source" Cvendor="ARM" Cversion="5.5.3" condition="RTOS2 RTX5" isTargetSpecific="1">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.8.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="Keil" Cversion="1.4.0" condition="Cortex-M Device" isTargetSpecific="1">
         <package name="ARM_Compiler" schemaVersion="1.6.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.3" />
@@ -671,61 +617,61 @@
               <RVCTZI>5</RVCTZI>
             </mem>
           </targetInfo>
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Capiversion="1.0.0" Cbundle="STM32F401C-Discovery" Cclass="Board Support" Cgroup="Buttons" Cvendor="Keil" Cversion="1.0.0" condition="STM32F4 HAL GPIO">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Capiversion="1.0.0" Cbundle="STM32F401C-Discovery" Cclass="Board Support" Cgroup="LED" Cvendor="Keil" Cversion="1.0.0" condition="STM32F4 HAL GPIO">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.8.1" condition="STM32F4 Framework Classic">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Common" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL Common">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Cortex" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="GPIO" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="PWR" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="RCC" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL GPIO">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.3" condition="STM32F4 CMSIS">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </component>
     </components>
     <files>
@@ -733,14 +679,14 @@
         <instance index="0" removed="1">RTE\CMSIS\RTX_Conf_CM.c</instance>
         <component Capiversion="1.0.0" Cclass="CMSIS" Cgroup="RTOS" Csub="Keil RTX" Cvendor="ARM" Cversion="4.81.1" condition="RTOS RTX" isDefaultVariant="1" />
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.2.0" />
-        </file>
+      </file>
       <file attr="config" category="source" name="CMSIS\RTOS2\RTX\Config\RTX_Config.c" version="5.1.1">
         <instance index="0">RTE\CMSIS\RTX_Config.c</instance>
         <component Capiversion="2.1.3" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.5.4" condition="RTOS2 RTX5" />
         <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
       <file attr="config" category="header" name="CMSIS\RTOS2\RTX\Config\RTX_Config.h" version="5.5.2">
         <instance index="0">RTE\CMSIS\RTX_Config.h</instance>
@@ -748,7 +694,7 @@
         <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
       <file attr="config" category="header" name="Config\EventRecorderConf.h" version="1.1.0">
         <instance index="0">RTE\Compiler\EventRecorderConf.h</instance>
@@ -756,7 +702,7 @@
         <package name="ARM_Compiler" schemaVersion="1.7.7" url="https://www.keil.com/pack/" vendor="Keil" version="1.7.2" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
       <file attr="config" category="header" name="CMSIS\Driver\Config\RTE_Device.h" version="2.4.5">
         <instance index="0">RTE\Device\STM32F401RETx\RTE_Device.h</instance>
@@ -764,7 +710,7 @@
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
       <file attr="config" category="source" condition="STM32F401xE_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s" version="2.6.8">
         <instance index="0">RTE\Device\STM32F401RETx\startup_stm32f401xe.s</instance>
@@ -772,7 +718,7 @@
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
       <file attr="config" category="header" name="MDK\Templates\Inc\stm32f4xx_hal_conf.h" version="1.8.1">
         <instance index="0">RTE\Device\STM32F401RETx\stm32f4xx_hal_conf.h</instance>
@@ -780,7 +726,7 @@
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.6.8">
         <instance index="0">RTE\Device\STM32F401RETx\system_stm32f4xx.c</instance>
@@ -788,7 +734,7 @@
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="https://www.keil.com/pack/" vendor="Keil" version="2.17.0" />
         <targetInfos>
           <targetInfo name="Debug" />
-          </targetInfos>
+        </targetInfos>
       </file>
     </files>
   </RTE>
